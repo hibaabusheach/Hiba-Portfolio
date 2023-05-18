@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    direction: rtl;
+    background-image: linear-gradient(to top, #2DFF8C, #281EFF);
+    color: #FFFFFF;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 150px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+p, label { 
+    color: #F9F9F9; 
+}
+
+.container form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form .fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .fields .input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    padding: 0 20px;
+}
+
+input {
+    border: 3px solid #FFFFFF;
+    background: transparent;
+    text-align: end;
+    padding: 8px 20px;
+}
+
+button {
+    padding: 10px 30px;
+    margin: auto;
+    position: absolute;
+    top: 24px;
+    color: #1C1C1C;
+    border: none;
+    background-color: #FFFFFF;
+    margin-bottom: -23px;
+}
+
+
+/* ======== Media's ======== */
+/* Applies styles to elements when the screen width is between 450px to 600px*/
+@media screen and (min-width: 400px) and (max-width: 600px) { 
+    
+}
+
+/* ======================== */
+/* Applies styles to elements when the screen width is between 601px to 992px*/
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    
+}
+
+
+
+/* ======== Media's ======== */
+/* X-Small device (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+    .container{
+        text-align: center;
+        margin: 0px 0px 24px 10px
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fields {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 15px 0;
+        text-align: center;
+        top: auto;
+        margin-top: 55px;
+        width: 330px;
+    }
+}
+
+/* Small device (landscap phone, 576px and up) 576px to 768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .container{
+        text-align: center;
+        margin: 0px 0px 24px 10px
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fields {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 15px 0;
+        text-align: center;
+        top: auto;
+        margin-top: 55px;
+        width: 330px;
+    }
+}
+
+/* Medium device (tablets, 768px and up) 768px to 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 80px;
+    }
+
+    .fields {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 15px 0;
+        text-align: center;
+        top: auto;
+        margin-top: 55px;
+        width: 330px;
+    }
+}
+
+/* Large device (desktops, 992px and up) 992px to 1200px */
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
+} */
