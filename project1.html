@@ -25,28 +25,31 @@
   <body>
     <!-- ============= Header ============= -->
     <header>
-      <div class="titles">
-        <img
-          class="logo"
-          src="./assets/portfolio's_images/woman.png" alt="logo"/>
-        <h1 class="name_h1" id="home-page">Hiba AbuSheach</h1>
-      </div>
-
-      <nav class="nav_top">
-        <ul class="nav_menu">
-          <li><a href="#home">ראשי</a></li>
-          <li><a href="#about">אודות</a></li>
-          <li><a href="#gallery">גלריה</a></li>
-          <li><a href="#contact">צור קשר</a></li>
-        </ul>
+      <!-- ***** Header Nav Bar ***** -->
+      <nav class="navbar" onclick="toggle()">
+          <ul>
+              <li><a class="menu"><i class="fa fa-bars"></i></a></li>
+              <li><a href="#home">ראשי</a></li>
+              <li><a href="#about">אודות</a></li>
+              <li><a href="#gallery">גלריה</a></li>
+              <li><a href="#workJS">עבודות</a></li>
+              <li><a href="#contact">צור קשר</a></li>
+          </ul>
       </nav>
+
+      <div class="titles">
+          <a href="#home" class="my-name">
+              <img class="logo" src="./assets/portfolio's_images/woman.png" alt="logo">
+              Hiba Abu Sheach
+          </a>
+      </div>
     </header>
     <!-- ============= Main ============= -->
     <main>
       <section class="section_control section_1" id="home">
         <h2>תיק עבודות אישי</h2>
         <article>
-          <p class="text_p">
+          <p class="desctext-p">
             ברוכים הבאים לתיק העבודות האישי שלי, פה תוכלו למצוא את כל עבודותיי
             האחרונות. בנוסף תוכלו לקרוא קצת עליי ועל תחומי העיסוק שלי בכל הקשור
             לבניית אתרים.
@@ -138,6 +141,7 @@
           </div>
         </article>
       </section>
+
       <!-- ============= Section cards ============= -->
       <section class="div-cards" id="gallery">
         <h3 class="text-h3">עבודות נבחרות</h3>
@@ -157,12 +161,8 @@
             </div>
 
             <div class="div-flex">
-              <a href="https://github.com/hibaabusheach/Landing-Page-1/archive/refs/heads/main.zip">
-                <button class="button">להורדת הפרוייקט</button>
-              </a>
-
-              <a href="https://hibaabusheach.github.io/Landing-Page-1/pro1.html">
-                <button class="button">לצפייה</button>
+              <a href="./link-for-landing-pages/details-pro1-vacation/vacationDetails.html">
+                <button class="button">לעמוד הפרוייקט</button>
               </a>
             </div>
           </div>
@@ -181,12 +181,8 @@
             </div>
 
             <div class="div-flex">
-              <a href="https://github.com/hibaabusheach/Landing-Page-2/archive/refs/heads/main.zip">
-                <button class="button">להורדת הפרוייקט</button>
-              </a>
-
-              <a href="https://hibaabusheach.github.io/Landing-Page-2/coffee.html">
-                <button class="button">לצפייה</button>
+              <a href="./link-for-landing-pages/details-pro2-coffee/coffeDetails.html">
+                <button class="button">לעמוד הפרוייקט</button>
               </a>
             </div>
           </div>
@@ -206,12 +202,8 @@
             </div>
 
             <div class="div-flex">
-              <a href="https://github.com/hibaabusheach/Landing-Page-3/archive/refs/heads/main.zip">
-                <button class="button">להורדת הפרוייקט</button>
-              </a>
-
-              <a href="https://hibaabusheach.github.io/Landing-Page-3/pro3.html">
-                <button class="button">לצפייה</button>
+              <a href="./link-for-landing-pages/details-pro3-here/hereDetails.html">
+                <button class="button">לעמוד הפרוייקט</button>
               </a>
             </div>
           </div>
@@ -231,13 +223,8 @@
             </div>
 
             <div class="div-flex">
-              <a href="https://github.com/hibaabusheach/Landing-Page-5/archive/refs/heads/main.zip">
-                <button class="button">להורדת הפרוייקט</button>
-              </a>
-              
-              
-              <a href="https://hibaabusheach.github.io/Landing-Page-5/landing5.html">
-                <button class="button">לצפייה</button>
+              <a href="./link-for-landing-pages/details-pro5-triangle/triangleDetails.html">
+                <button class="button">לעמוד הפרוייקט</button>
               </a>
             </div>
           </div>
@@ -259,12 +246,8 @@
             </div>
 
             <div class="div-flex">
-              <a href="https://github.com/hibaabusheach/Landing-Page-4/archive/refs/heads/main.zip">
-                <button class="button">להורדת הפרוייקט</button>
-              </a>
-
-              <a href="https://hibaabusheach.github.io/Landing-Page-4/landing4-pinkpic.html">
-                <button class="button">לצפייה</button>
+              <a href="./link-for-landing-pages/details-pro4-pink/pinkDetails.html">
+                <button class="button">לעמוד הפרוייקט</button>
               </a>
             </div>
           </div>
@@ -284,17 +267,103 @@
             </div>
 
             <div class="div-flex">
-              <a href="https://github.com/hibaabusheach/Landing-Page-6/archive/refs/heads/main.zip">
-                <button class="button">להורדת הפרוייקט</button>
-              </a>
-
-              <a href="https://hibaabusheach.github.io/Landing-Page-6/pro6.html">
-                <button class="button">לצפייה</button>
+              <a href="./link-for-landing-pages/details-pro6-chaiser/chaiserDetails.html">
+                <button class="button">לעמוד הפרוייקט</button>
               </a>
             </div>
           </div>
         </article>
       </section>
+
+      <!-- Portfolio JavaScript Play Center -->
+      <section class="portfolio" id="workJS">
+        <h2 class="heading">JS - עבודות נבחרות</h2>
+        <p class="descJS">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed eget ex vel velit tincidunt bibendum eu
+        </p>
+
+        <div class="portfolio_container">
+            <div class="portfolio_txt">
+                <div class="portfolio_box">
+                    <img src="./assets/imagesJS/creditCard.png" alt="Credit Card">
+                    <div class="portfolio_layer">
+                        <h4>Credit Card</h4>
+                        <a href="./links-for-proJS/details1-credit-card/creditCardDetails1.html">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <p>Credit Card</p>
+            </div>
+
+            <div class="portfolio_txt">
+                <div class="portfolio_box">
+                    <img src="./assets/bg.jpeg" alt="">
+                    <div class="portfolio_layer">
+                        <h4>Credit Card</h4>
+                        <a href="#">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <p>Credit Card</p>
+            </div>
+
+            <div class="portfolio_txt">
+                <div class="portfolio_box">
+                    <img src="./assets/bg.jpeg" alt="">
+                    <div class="portfolio_layer">
+                        <h4>Credit Card</h4>
+                        <a href="#">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <p>Credit Card</p>
+            </div>
+
+            <div class="portfolio_txt">
+                <div class="portfolio_box">
+                    <img src="./assets/bg.jpeg" alt="">
+                    <div class="portfolio_layer">
+                        <h4>WCredit Card</h4>
+                        <a href="#">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <p>Credit Card</p>
+            </div>
+
+            <div class="portfolio_txt">
+                <div class="portfolio_box">
+                    <img src="./assets/bg.jpeg" alt="">
+                    <div class="portfolio_layer">
+                        <h4>Credit Card</h4>
+                        <a href="#">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <p>Credit Card</p>
+            </div>
+
+            <div class="portfolio_txt">
+                <div class="portfolio_box">
+                    <img src="./assets/bg.jpeg" alt="">
+                    <div class="portfolio_layer">
+                        <h4>Credit Card</h4>
+                        <a href="#">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+                <p>Credit Card</p>
+            </div>
+        </div>
+      </section>
+
     </main>
     <!-- ============= Footer ============= -->
     <footer id="contact">
@@ -303,29 +372,33 @@
         <p class="contact-paragraph">
           נא להשאיר את פרטיכם ואנו נחזור אליכם בהקדם
         </p>
-        <form action="mailto:example@example.com" method="post">
+        <form id="my-form" action="mailto:bisan.tours@hotmail.com" method="post">
           <div class="form-control">
-            <label for="fullname">שם</label>
+            <label for="fullname">שם <span>*</span></label>
             <input type="text" id="fullname" name="fullname" placeholder="שם" required/>
+            <p id="msgFullNameAlert"></p>
+            
           </div>
 
           <div class="form-control">
-            <label for="email">אימייל</label>
+            <label for="email">אימייל <span>*</span></label>
             <input type="email" id="email" name="email" placeholder="אימייל" required/>
+            <p id="msgEmailAlert"></p>
           </div>
 
           <div class="form-control">
-            <label for="phone">טלפון</label>
+            <label for="phone">טלפון <span>*</span></label>
             <input type="tel" id="phone" name="phone" placeholder="טלפון" required/>
+            <p id="msgPhoneAlert"></p>
           </div>
 
           <div class="form-control">
             <label for="message">הודעה</label>
-            <textarea id="message" name="message" placeholder="הודעה" required></textarea>
+            <textarea id="message" name="message" placeholder="הודעה"></textarea>
           </div>
 
           <div class="form-buttons">
-            <button id="submit" type="submit">שליחה</button>
+            <button id="submit-btn" type="submit">שליחה</button>
           </div>
         </form>
       </div>
@@ -335,21 +408,21 @@
           <a href="">
             <img class="footer-icons" src="./assets/icons/Facebook.png" alt="facebook img"/>
           </a>
-          <span class="footer-span">#israel@israel</span>
+          <span class="footer-span">Facebook</span>
         </div>
 
         <div class="box">
           <a href="">
             <img class="footer-icons" src="./assets/icons/LinkedIn.png" alt="LinkedIn img"/>
           </a>
-          <span class="footer-span">#israel@israel</span>
+          <span class="footer-span">LinkedIn</span>
         </div>
 
         <div class="box">
           <a href="">
             <img class="footer-icons" src="./assets/icons/Chat.png" alt="Chat whats img"/>
           </a>
-          <span class="footer-span">053-3030306</span>
+          <span class="footer-span">052-6741165</span>
         </div>
 
         <div class="box">
@@ -363,14 +436,14 @@
           <a href="">
             <img class="footer-icons" src="./assets/icons/Email.png" alt="Email img"/>
           </a>
-          <span class="footer-span">israel@gmail.com</span>
+          <span class="footer-span">bisan.tours@hotmail.com</span>
         </div>
 
         <div class="box">
           <a href="">
             <img class="footer-icons" src="./assets/icons/Location.png" alt="Location img"/>
           </a>
-          <span class="footer-span">שוהם 5, רמת גן</span>
+          <span class="footer-span">כפר עארה</span>
         </div>
       </div>
 
@@ -380,5 +453,7 @@
       </div>
     </footer>
 
+
+    <script src="./project1.js"></script>
   </body>
 </html>
