@@ -223,7 +223,8 @@ h3 {
 .container-grid .box-container-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: center;
+  margin: 10px 13px;
   gap: 30px;
 }
 
@@ -239,7 +240,7 @@ h3 {
   width: 100%;
   height: 250px;
   border-radius: 5px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .container-grid .box-container-grid .box-grid h3 {
@@ -583,6 +584,11 @@ form {
     margin: 0 10px 40px 10px;
   }
 
+  .container-grid .box-container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+  }
+
   .portfolio .heading {
     text-align: center;
     font-size: 35px;
@@ -673,6 +679,11 @@ form {
 
   .container-grid .descJS {
     margin: 0 50px 40px 50px;
+  }
+
+  .container-grid .box-container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
   }
 
   .portfolio_container {

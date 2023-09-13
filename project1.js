@@ -46,7 +46,7 @@ let msgEmailAlert = document.getElementById('msgEmailAlert');
 let msgPhoneAlert = document.getElementById('msgPhoneAlert');
 
 
-const nameRegex = /^[a-zA-Z]{3,25}\s$/;
+const nameRegex = /^[A-Za-z'-]+(?: [A-Za-z'-]+)*$/;
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const phoneRegex = /^[0-9]{10}$/;
 
@@ -66,7 +66,7 @@ myForm.addEventListener('submit', (event) => {
         isValid = false;
     } else {
         nameInput.style.borderBottomColor = "green";
-        msgFullNameAlert.innerText = '';
+        msgFullNameAlert.textContent = '';
     }
 
     if (!emailRegex.test(emailInput.value)) {
@@ -75,7 +75,7 @@ myForm.addEventListener('submit', (event) => {
         isValid = false;
     } else {
         emailInput.style.borderBottomColor = "green";
-        msgEmailAlert.innerText = '';
+        msgEmailAlert.textContent = '';
     } 
 
     if (!phoneRegex.test(phoneInput.value)) {
@@ -84,7 +84,7 @@ myForm.addEventListener('submit', (event) => {
         isValid = false;
     } else {
         phoneInput.style.borderBottomColor = "green";
-        msgPhoneAlert.innerText = '';
+        msgPhoneAlert.textContent = '';
     }
 
     submitBtn.disabled = !isValid;
@@ -98,52 +98,3 @@ myForm.addEventListener('submit', (event) => {
         submitBtn.disabled = isValid;
   };
 });
-
-
-
-
-// // Get form elements DOM
-// const form = document.getElementById('form')
-// const fullNameInput = document.getElementById('fullName');
-// const emailInput = document.getElementById('email');
-// const phoneInput = document.getElementById('phone');
-// const messageInput = document.getElementById('message');
-// const submitButton = document.getElementById('submit');
-
-// // Regex patterns for validation
-// const formRegex = /^[]/
-// const fullNameRegex = /^[\u0590-\u05FF\s]+$/; // Hebrew letters and spaces only
-// const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern
-// const phoneRegex = /^\d{10,}$/; // At least 10 digits
-// const messageRegex = /^\d{3,200}$/; //min 3 characters max 200 characters
-
-// // Handle form submission//eventListener
-// submitButton.addEventListener('click', (event) => {
-//   event.preventDefault();
-
-//     // Validate form fields
-//     const fullName = fullnameInput.value.trim();
-//     const email = emailInput.value.trim();
-//     const phone = phoneInput.value.trim();
-//     const message = messageInput.value.trim();
-
-//     if (!nameRegex.test(fullName)) {
-//         alert('Please enter a valid name.');
-//         return;
-//     }
-
-//     if (!emailRegex.test(email)) {
-//         alert('Please enter a valid email address.');
-//         return;
-//     }
-
-//     if (!phoneRegex.test(phone)) {
-//         alert('Please enter a valid phone number.');
-//         return;
-//     }
-
-//   // Form is valid, proceed with form submission
-//   const mailtoLink = `mailto:example@example.com?subject=Contact Form Submission&body=${encodeURIComponent(message)}`;
-//   window.location.href = mailtoLink;
-// });
-
