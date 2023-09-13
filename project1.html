@@ -26,9 +26,9 @@
     <!-- ============= Header ============= -->
     <header>
       <!-- ***** Header Nav Bar ***** -->
-      <nav class="navbar" onclick="toggle()">
+      <nav class="navbar" >
           <ul>
-              <li><a class="menu"><i class="fa fa-bars"></i></a></li>
+              <li><a class="menu" onclick="toggle()"><i class="fa fa-bars"></i></a></li>
               <li><a href="#home">ראשי</a></li>
               <li><a href="#about">אודות</a></li>
               <li><a href="#gallery">גלריה</a></li>
@@ -143,154 +143,168 @@
       </section>
 
       <!-- ============= Section cards ============= -->
-      <section class="div-cards" id="gallery">
-        <h3 class="text-h3">עבודות נבחרות</h3>
-        <article class="projects-contianer">
-          <div class="div-card1 dv-card">
-            <img class="img-cards" src="./assets/portfolio's_images/landing_pages/landingPage1.png" alt="vacation photo"/>
-            <h3 class="project-title">vacation</h3>
-            <p class="txt-p">
-              פרוייקט ראשון בניית אתר תדמית פשוט, באמצעות אתר זה נלמד ליצור
-              קישורים לעוגנים
-            </p>
+      <section class="container-grid" id="gallery">
+        <h3 class="heaing-txt">עבודות נבחרות</h3>
+        <p class="descJS">
+          בתיק עבודות זה תמצאו דוגמאות לעבודותיי בפיתוח אתרים
+           ועיצוב גרפי, המציגות את מגוון הכישורים והניסיון שלי.
+           מאתרי אינטרנט, לוגו, עבודות עיצוב לדיגיטל ולדפוס,
+           עבדתי עם לקוחות פרטיים ועסקים בתחומים שונים ומגוונים.
+          כאן תוכלו לצפות מפרויקטים ועבודות שלי
+        </p>
 
-            <div class="img_work">
-              <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo"/>
-              <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo"/>
-              <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo"/>
+        <article class="box-container-grid">
+            
+            <div class="box-grid">
+                <img src="./assets/portfolio's_images/landing_pages/landingPage1.png" alt="vacation photo">
+                <h3>Vacation</h3>
+                <p>
+                    זהו פרויקט מסך כניסה/דף נחיתה. פרויקט זה נבנה באמצעות HTML5 & CSS3 & Bootstrap.
+                    פרויקט זה מגיב באופן מלא, כך שתוכל להשתמש בו בנייד כגון שולחן העבודה   
+                </p>
+
+                <div class="img_work">
+                    <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo">
+                    <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo">
+                    <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo">
+                </div>
+
+                <a href="./link-for-landing-pages/details-pro1-vacation/vacationDetails.html" class="btn">
+                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                    לעמוד הפרוייקט
+                </a>
             </div>
 
-            <div class="div-flex">
-              <a href="./link-for-landing-pages/details-pro1-vacation/vacationDetails.html">
-                <button class="button">לעמוד הפרוייקט</button>
-              </a>
-            </div>
-          </div>
+            <div class="box-grid">
+                <img src="./assets/portfolio's_images/landing_pages/landingPage2.png" alt="coffee img">
+                <h3>Coffee Project</h3>
+                <p>
+                    זהו מסך כניסה/דף נחיתה לפרויקט הקפה.
+                    פרויקט זה נבנה באמצעות HTML5 ו-CSS3 
+                    פרויקט זה מגיב באופן מלא, כך שתוכל להשתמש בו בנייד כגון שולחן העבודה.
+                </p>
 
-          <div class="div-card2 dv-card">
-            <img class="img-cards" src="./assets/portfolio's_images/landing_pages/landingPage2.png" alt="coffee img"/>
-            <h3 class="project-title">coffee project</h3>
-            <p class="txt-p">
-              פרוייקט שני בניית אתר תדמית פשוט, באמצעות אתר זה נלמד ליצור
-              קישורים לעוגנים
-            </p>
+                <div class="img_work">
+                    <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo">
+                    <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo">
+                </div>
 
-            <div class="img_work">
-              <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo"/>
-              <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo"/>
-            </div>
-
-            <div class="div-flex">
-              <a href="./link-for-landing-pages/details-pro2-coffee/coffeDetails.html">
-                <button class="button">לעמוד הפרוייקט</button>
-              </a>
-            </div>
-          </div>
-
-          <div class="div-card3 dv-card">
-            <img class="img-cards" src="./assets/portfolio's_images/landing_pages/landingPage3.png" alt="here and now img"/>
-            <h3 class="project-title">here and now</h3>
-            <p class="txt-p">
-              פרוייקט שלישי בניית אתר תדמית פשוט, באמצעות אתר זה נלמד ליצור
-              קישורים לעוגנים
-            </p>
-
-            <div class="img_work">
-              <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo"/>
-              <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo"/>
-              <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo"/>
+                <a href="./link-for-landing-pages/details-pro2-coffee/coffeDetails.html" class="btn">
+                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                    לעמוד הפרוייקט
+                </a>
             </div>
 
-            <div class="div-flex">
-              <a href="./link-for-landing-pages/details-pro3-here/hereDetails.html">
-                <button class="button">לעמוד הפרוייקט</button>
-              </a>
-            </div>
-          </div>
+            <div class="box-grid">
+                <img src="./assets/portfolio's_images/landing_pages/landingPage3.png" alt="here and now img">
+                <h3>Here & Now</h3>
+                <p>
+                    זהו פרויקט מסך כניסה/דף נחיתה.
+                    פרויקט זה נבנה באמצעות HTML5 & CSS3 & Bootstrap.
+                    פרויקט זה מגיב באופן מלא, כך שתוכל להשתמש בו בנייד כגון שולחן העבודה.
+                </p>
 
-          <div class="div-card4 dv-card">
-            <img class="img-cards" src="./assets/portfolio's_images/landing_pages/landing4.jpg" alt="triangles img"/>
-            <h3 class="project-title">triangles project</h3>
-            <p class="txt-p">
-              פרוייקט רביעי בניית אתר תדמית פשוט, באמצעות אתר זה נלמד ליצור
-              קישורים לעוגנים
-            </p>
+                <div class="img_work">
+                    <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo">
+                    <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo">
+                    <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo">
+                </div>
 
-            <div class="img_work">
-              <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo"/>
-              <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo"/>
-              <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo"/>
-            </div>
-
-            <div class="div-flex">
-              <a href="./link-for-landing-pages/details-pro5-triangle/triangleDetails.html">
-                <button class="button">לעמוד הפרוייקט</button>
-              </a>
-            </div>
-          </div>
-
-          <div class="div-card5 dv-card">
-            <img
-              class="img-cards"
-              src="./assets/portfolio's_images/landing_pages/landingPage5.png" alt="pink bkg img"/>
-            <h3 class="project-title">pink project</h3>
-            <p class="txt-p">
-              פרוייקט חמישי בניית אתר תדמית פשוט, באמצעות אתר זה נלמד ליצור
-              קישורים לעוגנים
-            </p>
-
-            <div class="img_work">
-              <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo"/>
-              <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo"/>
-              <img src="./assets/portfolio's_images/technologies/scss.png" alt="bootstrap photo"/>
+                <a href="./link-for-landing-pages/details-pro3-here/hereDetails.html" class="btn">
+                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                    לעמוד הפרוייקט
+                </a>
             </div>
 
-            <div class="div-flex">
-              <a href="./link-for-landing-pages/details-pro4-pink/pinkDetails.html">
-                <button class="button">לעמוד הפרוייקט</button>
-              </a>
-            </div>
-          </div>
+            <div class="box-grid">
+                <img src="./assets/portfolio's_images/landing_pages/landing4.jpg" alt="triangles img">
+                <h3>Triangles Project</h3>
+                <p>
+                    זהו מסך התחברות/דף נחיתה לפרויקט תנו לנו להוביל אתכם קדימה.
+                    פרויקט זה נבנה באמצעות HTML5 & CSS3 & Bootstrap.
+                    פרויקט זה מגיב באופן מלא, כך שתוכל להשתמש בו בנייד כגון שולחן העבודה  
+                </p>
 
-          <div class="div-card6 dv-card">
-            <img class="img-cards" src="./assets/portfolio's_images/landing_pages/landingPage6.png" alt="chaiser img"/>
-            <h3 class="project-title">chaiser project</h3>
-            <p class="txt-p">
-              פרוייקט ששי בניית אתר תדמית פשוט, באמצעות אתר זה נלמד ליצור
-              קישורים לעוגנים
-            </p>
+                <div class="img_work">
+                    <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo">
+                    <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo">
+                    <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo">
+                </div>
 
-            <div class="img_work">
-              <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo"/>
-              <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo"/>
-              <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo"/>
+                <a href="./link-for-landing-pages/details-pro5-triangle/triangleDetails.html" class="btn">
+                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                    לעמוד הפרוייקט
+                </a>
             </div>
 
-            <div class="div-flex">
-              <a href="./link-for-landing-pages/details-pro6-chaiser/chaiserDetails.html">
-                <button class="button">לעמוד הפרוייקט</button>
-              </a>
+            <div class="box-grid">
+                <img src="./assets/portfolio's_images/landing_pages/landingPage5.png" alt="pink bkg img">
+                <h3>Pink Project</h3>
+                <p>
+                    זהו פרויקט מסך כניסה/דף נחיתה.
+                    פרויקט זה נבנה באמצעות HTML5 & CSS3 & SCSS.
+                    פרויקט זה מגיב באופן מלא, כך שתוכל להשתמש בו בנייד כגון שולחן העבודה.
+                </p>
+                <div class="img_work">
+                    <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo">
+                    <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo">
+                    <img src="./assets/portfolio's_images/technologies/scss.png" alt="scss photo">
+                </div>
+
+                <a href="./link-for-landing-pages/details-pro4-pink/pinkDetails.html" class="btn">
+                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                    לעמוד הפרוייקט
+                </a>
             </div>
-          </div>
+
+            <div class="box-grid">
+                <img src="./assets/portfolio's_images/landing_pages/landingPage6.png" alt="chaiser img">
+                <h3>Chaiser Project</h3>
+                <p>
+                    זהו מסך כניסה/דף נחיתה לפרויקט הקפה.
+                    פרויקט זה נבנה באמצעות HTML5 & CSS3 & Bootstrap.
+                    פרויקט זה מגיב באופן מלא, כך שתוכל להשתמש בו בנייד כגון שולחן העבודה.
+                </p>
+
+                <div class="img_work">
+                    <img src="./assets/portfolio's_images/technologies/html.png" alt="html photo">
+                    <img src="./assets/portfolio's_images/technologies/css.png" alt="css photo">
+                    <img src="./assets/portfolio's_images/technologies/bootstrap.png" alt="bootstrap photo">
+                </div>
+
+                <a href="./link-for-landing-pages/details-pro6-chaiser/chaiserDetails.html" class="btn">
+                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                    לעמוד הפרוייקט
+                </a>
+            </div>
         </article>
-      </section>
+    </section>
 
       <!-- Portfolio JavaScript Play Center -->
       <section class="portfolio" id="workJS">
         <h2 class="heading">JS - עבודות נבחרות</h2>
         <p class="descJS">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed eget ex vel velit tincidunt bibendum eu
+          ברוכים הבאים לתיק העבודות שלי.
+          כמפתחת אתרים היה לי כיף לעבוד
+          על פרויקטים מגוונים ב' JS, 
+          כל אחד מהם מציג אתגרים יצירתיים.
+          בתיק עבודות זה אני מזמינה אתכם להתרשם
+          ולגלות את המיומנות שאני מביאה לכל פרויקט.
+          אני מאמינה שעיצוב טוב צריך לא רק להיראות יפה,
+          אלא גם להעביר בצורה יעילה את המסר והמטרה של הפרויקט.
+          אני ניגשת לכל פרויקט תוך התמקדות בהבנת מטרות
+          המשתמש ופיתוח פתרון פונקציונלי ואסתטי כאחד.
+          תכנסו, תהנו
         </p>
 
         <div class="portfolio_container">
             <div class="portfolio_txt">
                 <div class="portfolio_box">
-                    <img src="./assets/imageJS/creditCard.jpg" alt="Credit Card">
+                    <img src="./assets/imageJS/creditCard.jpg" alt="Credit Card image">
+                    
                     <div class="portfolio_layer">
-                        <h4>Credit Card</h4>
                         <a href="./links-for-proJS/details1-credit-card/creditCardDetails1.html">
-                            <i class='bx bx-link-external'></i>
+                          Credit Card
                         </a>
                     </div>
                 </div>
@@ -299,28 +313,26 @@
 
             <div class="portfolio_txt">
                 <div class="portfolio_box">
-                    <img src="./assets/bg.jpeg" alt="">
+                    <img src="./assets/imageJS/ticTacToe.png" alt="Tic-Tac-Toe image">
                     <div class="portfolio_layer">
-                        <h4>Credit Card</h4>
-                        <a href="#">
-                            <i class='bx bx-link-external'></i>
-                        </a>
+                      <a href="#">
+                        Tic-Tac-Toe
+                      </a>
                     </div>
                 </div>
-                <p>Credit Card</p>
+                <p>Tic-Tac-Toe</p>
             </div>
 
             <div class="portfolio_txt">
                 <div class="portfolio_box">
-                    <img src="./assets/bg.jpeg" alt="">
+                    <img src="./assets/imageJS/screenBuilder.png" alt=" image">
                     <div class="portfolio_layer">
-                        <h4>Credit Card</h4>
-                        <a href="#">
-                            <i class='bx bx-link-external'></i>
-                        </a>
+                      <a href="#">
+                        Screen Builder
+                      </a>
                     </div>
                 </div>
-                <p>Credit Card</p>
+                <p>Screen Builder</p>
             </div>
 
             <div class="portfolio_txt">
@@ -453,6 +465,9 @@
       </div>
     </footer>
 
+    <!-- ionicons - ICON'S -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="./project1.js"></script>
   </body>

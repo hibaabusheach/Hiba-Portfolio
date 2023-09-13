@@ -12,13 +12,14 @@ html {
 body {
   font-family: "Assistant", sans-serif;
   font-family: "Heebo", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding: 10px 5%;
+  padding: 10px 2%;
   background: aliceblue;
   box-shadow: 10px 10px 10px grey;
 }
@@ -43,7 +44,7 @@ h2 {
   display: flex;
   position: absolute;
   left: 180px;
-  top: 10px;
+  top: 20px;
 }
 
 .logo {
@@ -58,11 +59,11 @@ h2 {
   font-size: 1.5rem;
   display: inline-flex;
   gap: 5px;
-  align-items: center;
+  align-items: end;
 }
 
 .navbar {
-  min-height: 55px;
+  min-height: 70px;
   color: black;
   display: flex;
   justify-content: end;
@@ -194,95 +195,116 @@ h3 {
   background-color: #928282;
 }
 
-/* ============ photos grid================== */
-.projects-contianer {
+/* ***** Portfolio Word Grid ***** */
+.container-grid {
+  background: linear-gradient(45deg, blueviolet, lightgreen);
+  padding: 15px 9%;
+  padding-bottom: 100px;
+  padding: 60px 6px;
+}
+
+.container-grid .heaing-txt {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #5f3388;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  font-size: 50px;
+  direction: rtl;
+}
+
+.container-grid .descJS {
+  direction: rtl; 
+  font-size: 20px;   
+  text-align: center;   
+  color: #5f3388;    
+  margin: 0 200px 40px 200px;
+}
+
+.container-grid .box-container-grid {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  gap: 35px;
-  align-content: center;
-  justify-content: center;
-  background-color: #f3f3f3;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 30px;
 }
 
-.div-cards {
+.container-grid .box-container-grid .box-grid {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  background: #fff;
   text-align: center;
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
+  padding: 0 0 50px 0;
 }
 
-.img_work > img {
-  max-width: 50px;
-}
-
-.dv-card {
+.container-grid .box-container-grid .box-grid img {
+  width: 100%;
+  height: 250px;
   border-radius: 5px;
-  border: none;
-  max-width: 300px;
-  background-color: white;
-  box-shadow: 10px 14px 12px 2px rgba(50, 50, 93, 0.25);
-  transition: all 1s ease-in-out;
+  object-fit: cover;
 }
 
-.dv-card:hover {
-  transform: scale(1.1);
-}
-
-.img-cards {
-  border-radius: 5px;
-  height: 200px;
-  width: 300px;
-}
-
-.project-title {
-  font-family: "Assistant", sans-serif;
+.container-grid .box-container-grid .box-grid h3 {
+  color: #444;
+  font-size: 37px;
+  padding: 10px 0;
   font-family: "Satisfy", cursive;
-  text-align: center;
 }
 
-.txt-p {
-  text-align: center;
-  padding: 0 10px;
-  margin: 20px;
+.container-grid .box-container-grid .box-grid p {
+  color: #777;
+  font-size: 15px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  line-height: 1.8;
 }
 
-.div-flex {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+.container-grid .box-container-grid .box-grid .img_work > img { 
+  width: 85px;
+  height: 100px;
 }
 
-.button {
-  padding: 10px 15px;
-  margin: 20px;
-  border: 1px solid #2f2e2e;
+.container-grid .box-container-grid .box-grid .btn {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 17px;
+  padding: 10px 9px;
+  border: 1px solid #2F2E2E;
   border-radius: 25px;
-  background-color: #1ae0ec;
-  color: #2f2e2e;
+  background-color: #1AE0EC;
+  color: #2F2E2E;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.button:hover {
-  color: rgb(250, 249, 247);
-  background-color: #928282;
+.container-grid .box-container-grid .box-grid .btn:hover {
+  letter-spacing: 1px;
+}
+
+.container-grid .box-container-grid .box-grid:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+  transform: scale(1.02);
 }
 
 /* ***** Portfolio JavaScript section design ***** */
 .portfolio {
   background: aliceblue;
   min-height: 55vh;
-  padding: 100px;
+  padding: 50px 25px;
   text-align: center;
 }
 
 .portfolio .heading {
   margin-bottom: 0.5rem;
+  color: #5f3388;     
 }
 
 .portfolio .descJS {
-  margin: 0 20rem 6rem 20rem;
+  direction: rtl; 
+  font-size: 20px;   
+  text-align: center;   
+  color: #5f3388;    
+  margin: 0 200px 40px 200px;
 }
 
 .portfolio_container {
@@ -301,6 +323,9 @@ h3 {
 
 .portfolio_txt p {
   margin-top: 1.5rem;
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
+  font-size: 23px;
 }
 
 .portfolio_container .portfolio_box {
@@ -361,10 +386,12 @@ h3 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
+  width: 8rem;
   height: 5rem;
   background: #fff;
   border-radius: 50%;
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
 }
 
 .portfolio_layer a i {
@@ -488,35 +515,136 @@ form {
   font-size: 10px;
 }
 
+.copyright span {
+  color: #2f2e2e;
+}
+
 /* ======== Media's ======== */
-/* Applies styles to elements when the screen width is between 320px to 600px*/
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: block;
+@media screen and (min-width: 330px) and (max-width: 600px) {
+  .navbar { 
+    display: block; 
     min-height: 50px;
   }
 
-  .navbar a.menu {
-    display: block;
+  .navbar a.menu { display: block;}
+
+  .navbar a { display: none;}
+
+  .navbar.responsive a { display: block;}
+
+  .navbar ul { 
+    flex-direction: column;
+    align-items: end;
+    margin: 20px 10px 0;
   }
 
-  .navbar a {
-    display: none;
+  .titles{ left: 8px;}
+
+  .section_control { padding: 100px 8px; }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2.9rem;
   }
 
-  .navbar.responsive a {
-    display: block;
+  .desctext-p {
+    padding: 0 10%;
   }
+
+  .text_ofwork { padding: 0; }
+
+  .section_images { padding: 0; }
+
+  .article_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section_aboutme {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+    gap: 20px;
+  }
+
+  .downloud-cvv-container {
+    flex-direction: column-reverse;
+    direction: rtl;
+    text-align: center;
+  } 
+
+  .container-grid .heaing-txt {
+    font-size: 35px;
+  }
+
+  .container-grid .descJS {
+    margin: 0 10px 40px 10px;
+  }
+
+  .portfolio .heading {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .portfolio .descJS {
+    margin: 0 10px 40px 10px;
+  }
+
+  .portfolio_container {
+    grid-template-columns: 1fr;
+  }
+
+  .div-form { padding: 5% 5%; }
+
+  input, textarea { width: 100%; }
+
+  .footer-div-icons {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-content: center;
+  }
+
+  .box { 
+    margin: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .footer-div-span {
+    padding: 10px 5px;
+    justify-content: space-around;
+  }
+
+  .icons-bar {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+  }
+}
+
+/* Applies styles to elements when the screen width is between 601px to 992px*/
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .navbar { 
+    display: block; 
+    min-height: 50px;
+  }
+
+  .navbar a.menu { display: block;}
+
+  .navbar a { display: none;}
+
+  .navbar.responsive a { display: block;}
 
   .navbar ul {
     flex-direction: column;
     align-items: end;
-    margin: 2px 10px 0;
+    margin: 20px 0 0 10px;
   }
 
-  .titles {
-    left: 8px;
-  }
+  .titles { left: 15px;}
 
   .text_p,
   .section_images {
@@ -539,6 +667,18 @@ form {
     text-align: center;
   }
 
+  .portfolio .descJS {
+    margin: 0 50px 40px 50px;
+  }
+
+  .container-grid .descJS {
+    margin: 0 50px 40px 50px;
+  }
+
+  .portfolio_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .section_aboutme {
     display: flex;
     flex-direction: column;
@@ -553,12 +693,6 @@ form {
 
   .cls_article {
     text-align: center;
-  }
-
-  .projects-contianer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   .div-form {
@@ -582,15 +716,11 @@ form {
   }
 }
 
-/* Applies styles to elements when the screen width is between 601px to 992px*/
-@media screen and (min-width: 600px) and (max-width: 992px) {
+/* Applies styles to elements when the screen width is 993px and above*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .article_imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-
-/* Applies styles to elements when the screen width is 993px and above*/
-@media screen and (min-width: 992px) {
 }

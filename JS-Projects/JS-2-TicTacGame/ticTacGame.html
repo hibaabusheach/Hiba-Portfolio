@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a description of the current page"/>
+    <meta name="keywords" content="This is a Tic tac toe game"/>
+
+    <link rel="stylesheet" href="./ticTacGame.css">
+    <title>Tic tac toe game in HTML and JS.</title>
+</head>
+  
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <p id="ins">Game starts by just Tap on box
+            <br>
+            <br>
+            First Player starts as
+            <b>Player X </b>And Second Player as 
+            <b>Player 0</b>
+        </p>
+        <br><br>
+
+        <div class = "container">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="myFunc_1(); mainFunc();" 
+                    readonly>
+                
+                <input type="text" id="b2" class="cell" onclick="myFunc_2(); mainFunc();" 
+                    readonly>
+                
+                <input type="text" id="b3" class="cell" onclick="myFunc_3(); mainFunc();" 
+                    readonly>
+            </div>
+
+            <div class="row">
+                <input type="text" id="b4" class="cell" onclick="myFunc_4(); mainFunc();" 
+                    readonly>
+
+                <input type="text" id="b5" class="cell" onclick="myFunc_5(); mainFunc();" 
+                    readonly>
+
+                <input type="text" id="b6" class="cell" onclick="myFunc_6(); mainFunc();" 
+                   readonly>
+            </div>
+
+            <div class="row">
+                <input type="text" id="b7" class="cell" onclick="myFunc_7(); mainFunc();" 
+                    readonly>
+
+                <input type="text" id="b8"  class="cell" onclick="myFunc_8(); mainFunc();" 
+                    readonly>
+
+                <input type="text" id="b9"  class="cell" onclick="myFunc_9(); mainFunc();" 
+                    readonly>
+            </div>
+        </div>
+        <br><br><br>
+        
+        <button id="but" onclick="reset()">
+            RESET
+        </button>
+        <br><br>
+
+        <p id="print"></p>
+    </div>
+
+    <script src="./ticTacGame.js"></script>
+</body>
+</html>
