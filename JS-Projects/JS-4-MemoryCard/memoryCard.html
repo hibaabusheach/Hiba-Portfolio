@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a description of the current page"/>
+    <meta name="keywords" content="This is a Memory Card"/>
+
+    <link rel="stylesheet" href="./memoryCard.css" />
+    <title>Memory 🧠 Game in JavaScript</title>    
+</head>
+<body>
+    <div id="msgArea" class="msg"><p class="msgText"></p></div>
+
+    <div class="game">
+        <div class="controls">
+            <button id="btn" class="">Start</button>
+            <div class="stats">
+                <div class="moves">0 moves</div>
+                <div class="timer">time: 0 sec</div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board" data-dimension="4"></div>
+            <div class="win">You won!</div>
+        </div>
+    </div>
+    
+    <script src="./memoryCard.js"></script>
+</body>
+</html>
