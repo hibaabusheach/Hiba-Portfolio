@@ -1,3 +1,5 @@
+# JS-6-ShoppingCart
+
 This is a Shopping Cart.
 This project was built using pure HTML5 & CSS3 & JavaScript.
 
