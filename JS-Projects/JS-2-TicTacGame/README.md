@@ -1,3 +1,5 @@
+# JS-2-TicTacGame
+
 This is a tic tac toe XO Game.
 This project was built using pure HTML5 & CSS3 & JavaScript.
 
